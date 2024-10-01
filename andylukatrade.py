@@ -21,9 +21,9 @@ holding = []
 
 while True:
     #ALPACA API KEYS
-    BASE_URL = 'https://paper-api.alpaca.markets/v2'
-    KEY_ID = 'PKKN687PI6C8D094ROH6'
-    SECRET_KEY = 'ayFOvbIG47N72VeKHaTrBsqnRRawFWULfbcgwtzd'
+    BASE_URL = ''
+    KEY_ID = ''
+    SECRET_KEY = ''
 
     #Specifying accounts for data and trading
     history_account = StockHistoricalDataClient(KEY_ID, SECRET_KEY)
@@ -81,7 +81,7 @@ while True:
         order = account.submit_order(sell_data)
         print(order)
 
-    openai_api_key = "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"
+    openai_api_key = ""
 
     if openai_api_key is None:
         raise ValueError("OpenAI API key is not set in environment variables.")
